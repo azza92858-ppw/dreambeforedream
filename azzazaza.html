@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<title>DREAM BEFORE DREAM - NCT DREAM</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800;900&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;scroll-behavior:smooth}
+body{background:#FFF7E6;color:#222}
+a{text-decoration:none}
+nav{background:#111;padding:16px 25px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:99}
+nav .logo{color:#fff;font-weight:900;font-size:20px}
+nav .logo span{color:#FF6B00}
+nav ul{display:flex;gap:22px;list-style:none;flex-wrap:wrap}
+nav ul li a{color:#fff;font-weight:600}
+nav ul li a:hover{color:#FFE600}
+header{background:linear-gradient(135deg,#FF6B00,#FFC700,#7BC043,#00C2FF,#B565FF);color:#fff;text-align:center;padding:75px 20px}
+header .badge{background:#fff;color:#FF6B00;padding:8px 18px;border-radius:50px;font-weight:800;font-size:13px}
+header h1{font-size:46px;font-weight:900;line-height:1.1;margin:20px 0 10px}
+header h1 span{color:#FFE600}
+header p{margin-top:12px;max-width:650px;margin-left:auto;margin-right:auto;line-height:1.6}
+.btn{display:inline-block;margin-top:20px;background:#fff;color:#111;padding:13px 28px;border-radius:50px;font-weight:800}
+section{padding:60px 20px;max-width:1100px;margin:auto}
+h2{font-size:30px;color:#FF6B00;margin-bottom:10px}
+.sub{color:#666;line-height:1.6;margin-bottom:25px}
+.grid{display:flex;flex-wrap:wrap;gap:20px}
+.card{flex:1;min-width:300px;border-radius:25px;overflow:hidden;color:#fff;box-shadow:0 10px 25px rgba(0,0,0,.15)}
+.card .top{padding:20px 20px 26px 20px}
+.card .top .no{font-size:12px;background:rgba(255,255,255,.25);padding:5px 12px;border-radius:20px;display:inline-block;margin-bottom:12px}
+.card .top h3{font-size:24px}
+.card .top p{font-size:14px;line-height:1.6;margin-top:8px;opacity:.95}
+.lagu-img{width:100%;height:180px;object-fit:cover;border-radius:18px;margin-bottom:14px;border:3px solid rgba(255,255,255,.7);display:block}
+.card .bottom{background:#fff;padding:16px 20px;display:flex;gap:10px;flex-wrap:wrap}
+.card .bottom a{flex:1;text-align:center;padding:11px;border-radius:50px;font-weight:700;font-size:13px}
+.yt{background:#FF0000;color:#fff}
+.sp{background:#1DB954;color:#fff}
+.ly{background:#111;color:#fff}
+.t1{background:linear-gradient(135deg,#00C2FF,#7BFFB2)}
+.t2{background:linear-gradient(135deg,#FF6B00,#FFC700)}
+.t3{background:linear-gradient(135deg,#111,#FF0000,#FF6B00)}
+.t4{background:linear-gradient(135deg,#FF0000,#FF6B00,#FFE600)}
+.t5{background:linear-gradient(135deg,#FF9A9E,#FAD0C4,#A18CD1,#84FAB0,#8EC5FC)}
+.t6{background:linear-gradient(135deg,#7BC043,#00C2FF,#FFE600)}
+.t7{background:linear-gradient(135deg,#B565FF,#FF00A8,#FF6B00)}
+.t8{background:linear-gradient(135deg,#FFB6C1,#FF69B4,#FFE600)}
+.t9{background:linear-gradient(135deg,#4A90E2,#8EC5FC)}
+.t10{background:linear-gradient(135deg,#2D2D2D,#6A5ACD,#FF69B4)}
+.t11{background:linear-gradient(135deg,#000,#FF6B00,#FFE600)}
+#about{background:#FFF0D6;border-radius:30px}
+.tabel-box{background:#fff;padding:20px;border-radius:22px;overflow-x:auto;margin-top:30px}
+table{width:100%;border-collapse:collapse;min-width:600px}
+th{background:#FF6B00;color:#fff;padding:13px;text-align:left}
+td{padding:12px;border-bottom:1px solid #eee}
+/* MEMBER BARU */
+#member{background:#fff;border-radius:30px;box-shadow:0 5px 20px rgba(0,0,0,.05)}
+.member-grid{display:flex;flex-wrap:wrap;gap:20px}
+.member-card{flex:1;min-width:160px;background:#FFF7E6;border-radius:22px;overflow:hidden;text-align:center;padding-bottom:16px;box-shadow:0 5px 15px rgba(0,0,0,.08)}
+.member-card img{width:100%;height:220px;object-fit:cover;display:block}
+.member-card h3{color:#FF6B00;margin:12px 0 4px;font-size:19px}
+.member-card p{font-size:13px;color:#666;line-height:1.5;padding:0 12px}
+.member-card span{display:inline-block;margin-top:8px;background:#FF6B00;color:#fff;font-size:11px;font-weight:700;padding:5px 12px;border-radius:20px}
+#profil{background:#fff;border-radius:30px;box-shadow:0 5px 20px rgba(0,0,0,.05);text-align:center}
+.profil-foto{max-width:500px;margin:auto;background:linear-gradient(135deg,#FF6B00,#FFC700);padding:30px;border-radius:22px;color:#fff}
+.profil-foto .avatar{width:130px;height:130px;border-radius:50%;background:#fff;color:#FF6B00;font-size:60px;font-weight:900;display:flex;align-items:center;justify-content:center;margin:0 auto 15px;border:5px solid #fff}
+#contact{background:#222;color:#fff;border-radius:30px;text-align:center}
+#contact h2{color:#FFE600}
+#contact a{display:inline-block;margin:8px;padding:12px 25px;border-radius:50px;background:#FF6B00;color:#fff;font-weight:700}
+#contact a.white{background:#fff;color:#111}
+input,textarea{width:100%;padding:12px;border-radius:12px;border:1px solid #ddd;margin:8px 0}
+form{max-width:500px;margin:20px auto;text-align:left}
+form button{width:100%;padding:14px;border:none;border-radius:50px;background:#FF6B00;color:#fff;font-weight:800;cursor:pointer}
+footer{text-align:center;padding:25px;color:#888;font-size:13px}
+footer a{color:#FF6B00} 
+/* BINGKAI FOTO MEMBER */
+.member-grid{display:flex;flex-wrap:wrap;gap:18px;justify-content:center}
+.member-card{flex:1;min-width:170px;max-width:210px;background:#FFF7E6;border-radius:25px;overflow:hidden;text-align:center;padding:20px 12px 18px;box-shadow:0 5px 15px rgba(0,0,0,.07)}
+.member-card h3{color:#FF6B00;margin:12px 0 4px;font-size:19px}
+.member-card p{font-size:12px;color:#888;line-height:1.5;padding:0 8px}
+.member-card span{display:inline-block;margin-top:10px;background:#FF6B00;color:#fff;font-size:11px;font-weight:700;padding:6px 14px;border-radius:20px}
+.member-card img{width:130px;height:130px;object-fit:cover;display:block;margin:0 auto;border-radius:50%;border:4px solid #FF6B00;outline:2px solid #FFC700;outline-offset:3px;box-shadow:0 6px 18px rgba(255,107,0,.4)}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">DREAM <span>BEFORE DREAM</span></div>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#profil">Profil</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<header id="home">
+  <span class="badge">✦ NCT DREAM - PLAYLIST PILIHAN ✦</span>
+  <h1>DREAM BEFORE<br><span>DREAM</span></h1>
+  <p>11 Lagu, 11 Warna, 11 Mimpi.<br>Sebelum kita sampai di <b>DREAM AFTER DREAM</b><br>From Chewing Gum to Beat It Up.</p>
+  <a href="#member" class="btn">Lihat Member ↓</a>
+</header>
+
+<section id="about">
+  <h2>About - Tentang DREAM BEFORE DREAM</h2>
+  <p class="sub"><b>DREAM BEFORE DREAM</b><br>11 Lagu Sebelum DREAM AFTER DREAM<br><br>Perjalanan 11 lagu NCT DREAM sebelum album <b>DREAM AFTER DREAM (2026)</b>. Dari debut yang imut (Chewing Gum), swag (BOOM), pedas (Hot Sauce), manis (Candy), galau (Broken Melodies), sampai yang terbaru dan paling garang (Beat It Up).</p>
+  <div class="grid">
+    <div class="card"><div class="top t1"><span class="no">01 • DEBUT 2016</span><img class="lagu-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRc9_kbNuWUUXPRKTMR9T3WPOf1Ubzm1LDfNhGPU2dC8Q&s=10" alt="Chewing Gum"><h3> Chewing Gum</h3><p>Biru Mint + Putih. Ceria, imut.</p></div><div class="bottom"><a class="yt" href="https://www.youtube.com/results?search_query=NCT+DREAM+Chewing+Gum+MV" target="_blank">▶ YouTube</a><a class="sp" href="https://open.spotify.com/search/NCT%20DREAM%20Chewing%20Gum" target="_blank">♫ Spotify</a><a class="ly" href="https://genius.com/Nct-dream-chewing-gum-lyrics" target="_blank">Lirik</a></div></div>
+    <div class="card"><div class="top t2"><span class="no">02 • 2018</span><img class="lagu-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgYKf_OsFMbrJ4WhinhUMabNhuCLiyZZUoZqd4iV6fvw&s=10" alt="We Go Up"><h3> We Go Up</h3><p>Orange Sunset. Tumbuh dewasa.</p></div><div class="bottom"><a class="yt" href="https://www.youtube.com/results?search_query=NCT+DREAM+We+Go+Up+MV" target="_blank">▶ YouTube</a><a class="sp" href="https://open.spotify.com/search/NCT%20DREAM%20We%20Go%20Up" target="_blank">♫ Spotify</a><a class="ly" href="https://genius.com/Nct-dream-we-go-up-lyrics" target="_blank">Lirik</a></div></div>
+    <div class="card"><div class="top t3"><span class="no">03 • 2019</span><img class="lagu-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbvLdqjLiWKj0AUEgyztoMzCvKGv44h65GsSHswSZ7uA&s=10" alt="BOOM"><h3> BOOM</h3><p>Hitam-Merah. Powerful.</p></div><div class="bottom"><a class="yt" href="https://www.youtube.com/results?search_query=NCT+DREAM+BOOM+MV" target="_blank">▶ YouTube</a><a class="sp" href="https://open.spotify.com/search/NCT%20DREAM%20BOOM" target="_blank">♫ Spotify</a><a class="ly" href="https://genius.com/Nct-dream-boom-lyrics" target="_blank">Lirik</a></div></div>
+    <div class="card"><div class="top t4"><span class="no">04 • 2021</span><img class="lagu-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfkRSjos5K1rIWSLRmibPwsUJtwIlNQqofGEDyflHAZw&s=10" alt="Hot Sauce"><h3> Hot Sauce</h3><p>Merah-Kuning Pedas.</p></div><div class="bottom"><a class="yt" href="https://www.youtube.com/results?search_query=NCT+DREAM+Hot+Sauce+MV" target="_blank">▶ YouTube</a><a class="sp" href="https://open.spotify.com/search/NCT%20DREAM%20Hot+Sauce" target="_blank">♫ Spotify</a><a class="ly" href="https://genius.com/Nct-dream-hot-sauce-lyrics" target="_blank">Lirik</a></div></div>
+    <div class="card"><div class="top t5"><span class="no">05 • 2021</span><img class="lagu-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQorvFuftF_AdUB8wlHXxqtZ3WtYpuSoMF547v0SFi-Gw&s=10" alt="Rainbow"><h3> Rainbow</h3><p>Pelangi Pastel. Harapan.</p></div><div class="bottom"><a class="yt" href="https://www.youtube.com/results?search_query=NCT+DREAM+Rainbow" target="_blank">▶ YouTube</a><a class="sp" href="https://open.spotify.com/search/NCT%20DREAM%20Rainbow" target="_blank">♫ Spotify</a><a class="ly" href="https://genius.com/Nct-dream-rainbow-lyrics" target="_blank">Lirik</a></div></div>
+    <div class="card"><div class="top t6"><span class="no">06 • 2021</span><img class="lagu-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThf8DI5QtV6LU2IRisKuSlNg5lT6Wm4OKYkTsRwZTnYA&s=10" alt="Hello Future"><h3> Hello Future</h3><p>Hijau-Kuning Cerah.</p></div><div class="bottom"><a class="yt" href="https://www.youtube.com/results?search_query=NCT+DREAM+Hello+Future+MV" target="_blank">▶ YouTube</a><a class="sp" href="https://open.spotify.com/search/NCT%20DREAM%20Hello+Future" target="_blank">♫ Spotify</a><a class="ly" href="https://genius.com/Nct-dream-hello-future-lyrics" target="_blank">Lirik</a></div></div>
+    <div class="card"><div class="top t7"><span class="no">07 • 2022</span><img class="lagu-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqCo3m9EX6bZ08DCtAyGbrmt4UJo2JLRX5f86HkTethA&s=10" alt="Beatbox"><h3> Beatbox</h3><p>Neon Ungu-Pink.</p></div><div class="bottom"><a class="yt" href="https://www.youtube.com/results?search_query=NCT+DREAM+Beatbox+MV" target="_blank">▶ YouTube</a><a class="sp" href="https://open.spotify.com/search/NCT%20DREAM%20Beatbox" target="_blank">♫ Spotify</a><a class="ly" href="https://genius.com/Nct-dream-beatbox-lyrics" target="_blank">Lirik</a></div></div>
+    <div class="card"><div class="top t8"><span class="no">08 • 2022</span><img class="lagu-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEZH7D-ZFdgYpoRdknJbrf0xgIwui59ZIEZpcgXSJAxQ&s=10" alt="Candy"><h3> Candy</h3><p>Pink Manis.</p></div><div class="bottom"><a class="yt" href="https://www.youtube.com/results?search_query=NCT+DREAM+Candy+MV" target="_blank">▶ YouTube</a><a class="sp" href="https://open.spotify.com/search/NCT%20DREAM%20Candy" target="_blank">♫ Spotify</a><a class="ly" href="https://genius.com/Nct-dream-candy-lyrics" target="_blank">Lirik</a></div></div>
+    <div class="card"><div class="top t9"><span class="no">09 • 2022</span><img class="lagu-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXLa2EllVlgmMBpuKcBwjo5W57xyPomlE_JAhFtlF-iA&s=10" alt="Graduation"><h3> Graduation</h3><p>Biru Langit Haru.</p></div><div class="bottom"><a class="yt" href="https://www.youtube.com/results?search_query=NCT+DREAM+Graduation" target="_blank">▶ YouTube</a><a class="sp" href="https://open.spotify.com/search/NCT%20DREAM%20Graduation" target="_blank">♫ Spotify</a><a class="ly" href="https://genius.com/Nct-dream-graduation-lyrics" target="_blank">Lirik</a></div></div>
+    <div class="card"><div class="top t10"><span class="no">10 • 2023</span><img class="lagu-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNHVTs9VCcJ-cqVoEq0PcVQTmjpvCttRJYc9QGHqleGg&s=10" alt="Broken Melodies"><h3> Broken Melodies</h3><p>Ungu Gelap. Galau.</p></div><div class="bottom"><a class="yt" href="https://www.youtube.com/results?search_query=NCT+DREAM+Broken+Melodies+MV" target="_blank">▶ YouTube</a><a class="sp" href="https://open.spotify.com/search/NCT%20DREAM%20Broken+Melodies" target="_blank">♫ Spotify</a><a class="ly" href="https://genius.com/Nct-dream-broken-melodies-lyrics" target="_blank">Lirik</a></div></div>
+    <div class="card"><div class="top t11"><span class="no">11 • 2025</span><img class="lagu-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWLeJ3zfw3mvx20uHN07T5bG_xLoV2O_v8TNIaVkj8ug&s=10" alt="Beat It Up"><h3> Beat It Up</h3><p>Hitam-Orange. Berani.</p></div><div class="bottom"><a class="yt" href="https://www.youtube.com/results?search_query=NCT+DREAM+Beat+It+Up+MV" target="_blank">▶ YouTube</a><a class="sp" href="https://open.spotify.com/search/NCT%20DREAM%20Beat+It+Up" target="_blank">♫ Spotify</a><a class="ly" href="https://genius.com/Nct-dream-beat-it-up-lyrics" target="_blank">Lirik</a></div></div>
+  </div>
+  
+<section id="member"><h2>Member NCT DREAM</h2><p class="sub">7 Member, 7 Warna, 7 Mimpi.</p><div class="member-grid">
+<div class="member-card"><img src="https://cdn-jjmn.jawapos.com/images/15/2025/03/11/IMG_20230829_061322-3145261852-2908173364.jpg" alt="Mark"><h3>Mark</h3><p>Lee Min-hyung / Mark Lee<br>2 Agustus 1999 - Canada</p><span>Leader(Keluar NCT) - Main Rapper/solo</span></div>
+<div class="member-card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8HyKGViaH2tMDUUoJG3A59PnFmkfBD3txiEjE1x0YMQ&s=10" alt="Renjun"><h3>Renjun</h3><p>Huang Renjun<br>23 Maret 2000 - China</p><span>Main Vocal</span></div>
+<div class="member-card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHh95xt211nYfVv1PdyF2zPx_MC6CdL0wjGCu93LO7-g&s=10" alt="Haechan" alt="Jeno"><h3>Jeno</h3><p>Lee Je-no<br>23 April 2000 - Korea</p><span>Lead Rapper(Leader) - Visual-JNJM</span></div>
+<div class="member-card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdtriHXe25cx43HJPaZRiCaIv6KEiq4s7zk-Vd8d4KfA&s=10"><h3>Haechan</h3><p>Lee Dong-hyuck<br>6 Juni 2000 - Korea</p><span>Main Vocal</span></div>
+<div class="member-card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ7VS9sb3E9JDCjD61eu9aa6ilAWukHc1alT5C3UBwBg&s=10"><h3>Jaemin</h3><p>Na Jae-min<br>13 Agustus 2000 - Korea</p><span>Lead Rapper - Visual-JNJM</span></div>
+<div class="member-card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTm19cKzPJRQzdGt9xFs_lTT3EwHhwO6Cd3Z1ul7mW2-Q&s=10" alt="Chenle"><h3>Chenle</h3><p>Zhong Chenle<br>22 November 2001 - China</p><span>Main Vocal</span></div>
+<div class="member-card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfi6z-y_hWLCh4e76pvNNO98gF4aw5la2HmgS3L4ogeA&s=10" alt="Jisung"><h3>Jisung</h3><p>Park Ji-sung<br>5 Februari 2002 - Korea</p><span>Main Dancer - Maknae</span></div>
+</div></section>
+
+<section id="profil">
+  <h2> Profil</h2>
+  <p class="sub">Halo, kenalan sama pembuat website ini!</p>
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqJ2u0ZSyTAn-oAuf9zvRDMZKnTLSxiAZziX6sfMhAqg&s=10" style="width:130px;height:130px;object-fit:cover;border-radius:50%;border:5px solid #fff;display:block;margin:0 auto 15px;">
+    <div class="avatar"></div>
+    <h3>Almira Asza Anshari</h3>
+    <p>Pembuat Website<br>DREAM BEFORE DREAM</p>
+    <p style="font-size:14px;margin-top:12px;line-height:1.6">Website ini saya buat untuk berbagi 11 lagu favorit NCT DREAM, dari Chewing Gum sampai Beat It Up. Semoga kalian suka!</p>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact - Hubungi Kami</h2>
+  <p>Mau request lagu lain / order album / join fanbase?</p>
+  <a href="https://wa.me/6285641777871" target="_blank"> WhatsApp</a>
+  <a class="white" href="https://www.instagram.com/azza_za04?psln=Nmpya3c0dGhsaWlr" target="_blank"> Instagram</a>
+  <a href="mailto:azza92858@gmail.com"> Email</a>
+  <form onsubmit="alert('Makasih! Pesan kamu udah kekirim ');return false;">
+    <input type="text" placeholder="Nama kamu" required>
+    <input type="text" placeholder="Lagu favorit kamu dari 11 ini?" required>
+    <textarea rows="3" placeholder="Pesan..."></textarea>
+    <button type="submit">Kirim Pesan </button>
+  </form>
+  <p style="font-size:13px;opacity:.7"> Pekalongan, Indonesia • Buka tiap hari 09.00 - 21.00 WIB</p>
+</section>
+
+<footer>
+  <a href="#home">↑ Back to Home</a> | <a href="#about">About</a> | <a href="#member">Member</a> | <a href="#profil">Profil</a> | <a href="#contact">Contact</a><br><br>
+  © 2026 DREAM BEFORE DREAM - Made with by Almira Asza Anshari<br>
+  Before DREAM AFTER DREAM
+</footer>
+
+</body>
+</html>
